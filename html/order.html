@@ -1,0 +1,11 @@
+@include('./components/_head.html', {
+'title' : 'ARTEDILUCE — Светящиеся кубы | Страница заказа'
+})
+
+<main class="main">
+    <h1 class="sr-only">Оформление заказа</h1>
+    @include('./order-page/_order-header.html')
+    @include('./order-page/_order-body.html')
+</main>
+
+@include('./components/_bottom.html')

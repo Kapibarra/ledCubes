@@ -1,0 +1,58 @@
+<section class="types section">
+    <div class="container">
+        <h2 class="title">
+            Светильники бывают 2 типов
+        </h2>
+        <ul class="types__items">
+            <li class="types__item">
+                @include('../components/cards/_type-card.html', {
+                'img' : '1',
+                'title' : 'От сети',
+                'text' : 'Cтандартный вариант 220В и длина провода 2м, но мы можем сделать по желанию заказчика 12 или 24В и любую длину провода'
+                })
+            </li>
+            <li class="types__item">
+                @include('../components/cards/_type-card.html', {
+                'img' : '2',
+                'title' : 'От аккумулятора',
+                'text' : 'Мощный аккумулятор с 24 диодами и время работы до 12 часов, время зарядки до 4 часов.'
+                })
+            </li>
+        </ul>
+    </div>
+
+    <div class="types__images" style="background-image: url('img/types/picture.jpg');">
+        <div class="types__container container">
+            <ul class="types__list">
+                <li class="types__cube types__cube--suspension">
+                    <h3 class="types__subtitle subtitle">
+                        <a class="types__link" href="#product">Подвесной</a>
+                    </h3>
+                    <div class="types__visual">
+                        <img class="types__img" src="img/types/cubes/img-1.png" alt="Подвесной" loading="lazy" width="185" height="185">
+                    </div>
+                </li>
+                <li class="types__cube types__cube--floor">
+                    <h3 class="types__subtitle subtitle">
+                        <a class="types__link" href="#product">Напольный</a>
+                    </h3>
+                    <div class="types__visual">
+                        <img class="types__img" src="img/types/cubes/img-2.png" alt="Напольный" loading="lazy" width="185" height="185">
+                    </div>
+                </li>
+                <li class="types__cube types__cube--battery">
+                    <h3 class="types__subtitle subtitle">
+                        <a class="types__link" href="#product">От аккумулятора</a>
+                    </h3>
+                    <div class="types__visual">
+                        <img class="types__img" src="img/types/cubes/img-3.png" alt="От аккумулятора" loading="lazy" width="185" height="185">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</section>

@@ -1,0 +1,255 @@
+<section class="colors" id="colors">
+    <div class="colors__inner">
+        <div class="colors__container container">
+            <div class="colors__wrapper">
+                <div class="colors__content">
+                    <h2 class="colors__title title">
+                        Цветность
+                    </h2>
+                    <p class="colors__text">
+                        С помощью пульта выберите из 16 цветов свой оттенок свечения
+                    </p>
+                    <div class="colors-panel form">
+                        <div class="colors-panel__items">
+                            <div class="colors-panel__item">
+                                <input class="form__hidden form__hidden--colors" type="radio" name="color" id="color-colors" checked>
+                                <label class="colors-panel__radio form__radio form__radio--colors" for="color-colors">Разноцветная</label>
+                            </div>
+                            <div class="colors-panel__item">
+                                <input class="form__hidden form__hidden--white" type="radio" name="color" id="white" checked>
+                                <label class="colors-panel__radio form__radio form__radio--white" for="white">Белая</label>
+                            </div>
+                        </div>
+                        <div class="colors-panel__additions">
+                            <div class="colors-panel__addition">
+                                <input class="form__hidden form__hidden--neutral" type="radio" name="color-addition" id="neutral">
+                                <label class="colors-panel__radio form__radio form__radio--neutral" for="neutral">Нейтральный(4000к)</label>
+                            </div>
+                            <div class="colors-panel__addition">
+                                <input class="form__hidden form__hidden--warm" type="radio" name="color-addition" id="warm">
+                                <label class="colors-panel__radio form__radio form__radio--warm" for="warm">Теплый(2700к)</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="colors-controller" style="background-image: url('img/colors/controller.png');">
+                    <h3 class="sr-only">Пульт</h3>
+                    <ul class="colors-controller__items">
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__brightness colors-controller__brightness--increase" type="button">
+                                <span class="sr-only">Прибавить яркость</span>
+                            </button>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link colors-controller__link--active" href="#r" style="background-color: #ff1f1f;">
+                                r
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#r-1" style="background-color: #ff551f;">
+                                <span class="sr-only">Красно-оранжевый Крайола</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#r-2" style="background-color: #ff7d1f;">
+                                <span class="sr-only">Коралловый</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#r-3" style="background-color: #ffb31f;">
+                                <span class="sr-only">Ярко-желтый</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#r-4" style="background-color: #fde000;">
+                                <span class="sr-only">Светлый зеленовато-желтый</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__brightness colors-controller__brightness--decrease" type="button">
+                                <span class="sr-only">Убавить яркость</span>
+                            </button>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#g" style="background-color: #049051;">
+                                g
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#g-1" style="background-color: #008f9a;">
+                                <span class="sr-only">Темный циан</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#g-2" style="background-color: #0092cd;">
+                                <span class="sr-only">Блестящий синевато-зеленый</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#g-3" style="background-color: #007ea7;">
+                                <span class="sr-only"> Лазурно-серый (Зеленовато-синий)</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#g-4" style="background-color: #006994;">
+                                <span class="sr-only"> Дартмутский зеленый</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link colors-controller__link--off" href="#off" style="background-color: #000000;">
+                                off
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#b" style="background-color: #044b9a;">
+                                b
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#b-1" style="background-color: #0064ac;">
+                                <span class="sr-only">Синий</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#b-2" style="background-color: #040430;">
+                                <span class="sr-only">Темно синий</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#b-3" style="background-color: #7c2065;">
+                                <span class="sr-only"> Насыщенный пурпурно-красный</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#b-4" style="background-color: #ed007c;">
+                                <span class="sr-only">Амарантовый маджента</span>
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link colors-controller__link--on" href="#r" style="background-color: #e0132f;">
+                                on
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <a class="colors-controller__link" href="#w" style="background-color: #ffffff;">
+                                w
+                            </a>
+                        </li>
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__mode" type="button">
+                                flash
+                            </button>
+                        </li>
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__mode" type="button">
+                                strobe
+                            </button>
+                        </li>
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__mode" type="button">
+                                fade
+                            </button>
+                        </li>
+                        <li class="colors-controller__item">
+                            <button class="colors-controller__mode" type="button">
+                                smooth
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul class="colors__list">
+            <li class="colors__item colors__item--active" id="r">
+                <img class="colors__img" src="img/colors/images/r.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="r-1">
+                <img class="colors__img" src="img/colors/images/r-1.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="r-2">
+                <img class="colors__img" src="img/colors/images/r-2.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="r-3">
+                <img class="colors__img" src="img/colors/images/r-3.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="r-4">
+                <img class="colors__img" src="img/colors/images/r-4.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="g">
+                <img class="colors__img" src="img/colors/images/g.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="g-1">
+                <img class="colors__img" src="img/colors/images/g-1.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="g-2">
+                <img class="colors__img" src="img/colors/images/g-2.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="g-3">
+                <img class="colors__img" src="img/colors/images/g-3.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="g-4">
+                <img class="colors__img" src="img/colors/images/g-4.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="b">
+                <img class="colors__img" src="img/colors/images/b.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="b-1">
+                <img class="colors__img" src="img/colors/images/b-1.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="b-2">
+                <img class="colors__img" src="img/colors/images/b-2.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="b-3">
+                <img class="colors__img" src="img/colors/images/b-3.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="b-4">
+                <img class="colors__img" src="img/colors/images/b-4.jpg" alt="Красная цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="w">
+                <img class="colors__img" src="img/colors/images/white.jpg" alt="Белая цветность" loading="lazy" width="1280" height="877">
+            </li>
+            <li class="colors__item" id="off">
+                <img class="colors__img" src="img/colors/images/off.jpg" alt="Подсветка выключена" loading="lazy" width="1280" height="877">
+            </li>
+        </ul>
+        <img class="colors__neutral" src="img/colors/images/neutral.png" alt="Нейтральный" loading="lazy" width="1280" height="877">
+        <img class="colors__white" src="img/colors/images/standart.jpg" alt="Белая цветность" loading="lazy" width="1280" height="877">
+        
+    </div>
+
+    <div class="colors-videos">
+        <div class="container">
+            <ul class="colors-videos__items">
+                <li class="colors-videos__item">
+                    @include('../components/cards/_colors-card.html', {
+                    'video' : 'flash',
+                    'accent' : 'flash',
+                    'text' : 'Быстрое переключение всех цветов по порядку'
+                    })
+                </li>
+                <li class="colors-videos__item">
+                    @include('../components/cards/_colors-card.html', {
+                    'video' : 'strobe',
+                    'accent' : 'strobe',
+                    'text' : 'Быстрое включение и выключение (мигание) белого цвета'
+                    })
+                </li>
+                <li class="colors-videos__item">
+                    @include('../components/cards/_colors-card.html', {
+                    'video' : 'fade',
+                    'accent' : 'fade',
+                    'text' : 'Попеременное уменьшение и увеличение яркости всех цветов'
+                    })
+                </li>
+                <li class="colors-videos__item">
+                    @include('../components/cards/_colors-card.html', {
+                    'video' : 'smooth',
+                    'accent' : 'smooth',
+                    'text' : 'Плавный переход от одного цвета к другому'
+                    })
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>

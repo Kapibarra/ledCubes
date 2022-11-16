@@ -1,0 +1,220 @@
+<section class="order-body">
+    <h2 class="sr-only">Оформление заказа</h2>
+    <div class="container">
+        <div class="order-body__wrapper">
+            <div class="order-body__box">
+                <form class="order-body__content" action="#">
+                    <div class="order-base form">
+                        <div class="order-base__item">
+                            <label class="sr-only" for="name">Введите ваше имя</label>
+                            <input class="form__field" type="text" name="name" placeholder="Имя" id="name" required>
+                        </div>
+                        <div class="order-base__item">
+                            <label class="sr-only" for="surname">Введите фамилию</label>
+                            <input class="form__field" type="text" name="surname" placeholder="Фамилия" id="surname" required>
+                        </div>
+                        <div class="order-base__item">
+                            <label class="sr-only" for="middle-name">Введите Отчество</label>
+                            <input class="form__field" type="text" name="middle-name" placeholder="Отчество" id="middle-name" required>
+                        </div>
+                        <div class="order-base__item">
+                            <label class="sr-only" for="tel">Введит ваш телефон</label>
+                            <input class="form__field" type="tel" name="tel" placeholder="Телефон" id="tel" required>
+                        </div>
+                        <div class="order-base__item">
+                            <label class="sr-only" for="email">Введит почту (необязательно)</label>
+                            <input class="form__field" type="email" name="email" placeholder="Почта (необязательно)" id="email">
+                        </div>
+                    </div>
+
+                    <h3 class="order-body__title">
+                        Выберите способ получения
+                    </h3>
+                    <div class="order-receive form">
+                        <div class="order-receive__items">
+                            <div class="order-receive__item">
+                                <input class="form__hidden" type="radio" name="receive" id="pickup" value="Самовывоз" checked>
+                                <label class="form__radio" for="pickup">Самовывоз</label>
+                            </div>
+                            <div class="order-receive__item">
+                                <input class="form__hidden" type="radio" name="receive" id="delivery" value="Доставка">
+                                <label class="form__radio" for="delivery">Доставка</label>
+                            </div>
+                        </div>
+                        <div class="order-receive__items order-receive__items--delivery">
+                            <div class="order-receive__item">
+                                <input class="form__hidden" type="radio" name="city" id="moskow" value="Москва" checked>
+                                <label class="form__radio" for="moskow">Москва</label>
+                            </div>
+                            <div class="order-receive__item">
+                                <input class="form__hidden" type="radio" name="city" id="another" value="Другой город (ТК)">
+                                <label class="form__radio" for="another">Другой город (ТК)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="order-delivery form">
+                        <div class="order-delivery__item">
+                            <label class="sr-only" for="address">Адрес</label>
+                            <select class="order-select" name="pay">
+                                <option value="Картой онлайн">Выберите ТК</option>
+                                <option value="Картой онлайн">Выберите ТК</option>
+                                <option value="Картой онлайн">Выберите ТК</option>
+                                <option value="Картой онлайн">Выберите ТК</option>
+                            </select>
+                        </div>
+                        <div class="order-delivery__item">
+                            <label class="sr-only" for="address">Адрес</label>
+                            <input class="form__field" type="text" name="address" placeholder="Адрес" id="address" required>
+                        </div>
+                        <div class="order-delivery__items">
+                            <div class="order-delivery__item order-delivery__item--small">
+                                <label class="sr-only" for="flat">Квартира</label>
+                                <input class="form__field" type="number" name="flat" placeholder="Квартира" id="flat" required>
+                            </div>
+                            <div class="order-delivery__item order-delivery__item--small">
+                                <label class="sr-only" for="floor">Этаж</label>
+                                <input class="form__field" type="number" name="floor" placeholder="Этаж" id="floor" required>
+                            </div>
+                            <div class="order-delivery__item order-delivery__item--small">
+                                <label class="sr-only" for="entrance">Подъезд</label>
+                                <input class="form__field" type="number" name="entrance" placeholder="Подъезд" id="entrance" min="1" required>
+                            </div>
+                        </div>
+                        <div class="order-delivery__datetime">
+                            <div class="order-date">
+                                <div class="order-date__wrapper swiper">
+                                    <ul class="order-date__items swiper-wrapper">
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-1" value="6 авг">
+                                            <label class="order-date__radio" for="data-1">
+                                                6 авг
+                                                <span class="order-date__day">сб</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-2" value="7 авг">
+                                            <label class="order-date__radio" for="data-2">
+                                                7 авг
+                                                <span class="order-date__day">вс</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-3" value="8 авг">
+                                            <label class="order-date__radio" for="data-3">
+                                                8 авг
+                                                <span class="order-date__day">пн</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-4" value="9 авг">
+                                            <label class="order-date__radio" for="data-4">
+                                                9 авг
+                                                <span class="order-date__day">вт</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-5" value="10 авг">
+                                            <label class="order-date__radio" for="data-5">
+                                                10 авг
+                                                <span class="order-date__day">ср</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-6" value="11 авг">
+                                            <label class="order-date__radio" for="data-6">
+                                                11 авг
+                                                <span class="order-date__day">чт</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-7" value="12 авг">
+                                            <label class="order-date__radio" for="data-7">
+                                                12 авг
+                                                <span class="order-date__day">пт</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-8" value="13 авг">
+                                            <label class="order-date__radio" for="data-8">
+                                                13 авг
+                                                <span class="order-date__day">сб</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-9" value="14 авг">
+                                            <label class="order-date__radio" for="data-9">
+                                                14 авг
+                                                <span class="order-date__day">вс</span>
+                                            </label>
+                                        </li>
+                                        <li class="order-date__item swiper-slide">
+                                            <input class="order-date__hidden" type="radio" name="data" id="data-10" value="15 авг">
+                                            <label class="order-date__radio" for="data-10">
+                                                15 авг
+                                                <span class="order-date__day">пн</span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <button class="order-date__button order-date__button--prev swiper-button-prev" type="button">
+                                    </button>
+                                    <button class="order-date__button order-date__button--next swiper-button-next" type="button">
+                                    </button>
+                                </div>
+                            </div>
+                            <select class="order-select order-select--delivery" name="pay">
+                                <option value="Картой онлайн">Время доставки</option>
+                                <option value="Картой онлайн">Время доставки</option>
+                                <option value="Картой онлайн">Время доставки</option>
+                                <option value="Картой онлайн">Время доставки</option>
+                            </select>
+                        </div>
+                        <div class="order-delivery__item">
+                            <label class="sr-only" for="comment">Комментарий для курьера</label>
+                            <textarea class="form__field form__field--textarea" name="comment" placeholder="Комментарий для курьера" id="comment" required ку></textarea>
+                        </div>
+                    </div>
+
+                    <div class="order-address">
+                        <div class="order-address__info">
+                            <h3 class="order-address__headding">
+                                адрес
+                            </h3>
+                            <span class="order-address__place">
+                                г. Москва, ул. Варшавское ш, д.125 к.3
+                            </span>
+                            <span class="order-address__work">Пн - Пт с 10:00-19:00</span>
+                            <a class="order-address__link" href="tel:+79324355454">8 932 435-54-54</a>
+                        </div>
+                        <div class="order-address__map">
+                            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps"
+                                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a
+                                    href="https://yandex.ru/maps/213/moscow/house/varshavskoye_shosse_125k3/Z04YcAZpTEQEQFtvfXpzc3hiYg==/?ll=37.619513%2C55.622416&utm_medium=mapframe&utm_source=maps&z=17.21"
+                                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Варшавское шоссе, 125к3 — Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCUVYNGfDD"
+                                    frameborder="1" allowfullscreen="true"></iframe></div>
+                        </div>
+                    </div>
+
+                    <h3 class="order-body__title">
+                        Выберите способ оплаты
+                    </h3>
+                    <select class="order-select" name="pay">
+                        <option value="Картой онлайн">Картой онлайн</option>
+                        <option value="Картой онлайн">Картой онлайн</option>
+                        <option value="Картой онлайн">Картой онлайн</option>
+                        <option value="Картой онлайн">Картой онлайн</option>
+                    </select>
+                </form>
+            </div>
+            <div class="order-body__info">
+                <h3 class="order-body__title order-body__title--info">Ваш заказ</h3>
+                <span class="order-body__count">3 товара</span>
+                <span class="order-body__price">3500 ₽</span>
+                <button class="order-body__button button" type="button">
+                    Оформить
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>

@@ -1,0 +1,28 @@
+</div>
+<script>
+  const finilyNum = document.querySelector('.order-body__count');
+  const finilyPrice = document.querySelector('.order-body__price');
+  const result = location.search.substring(1).split('&');
+
+  if (finilyPrice && finilyNum) {
+    for (let i = 0; i < result.length; i++) {
+      finilyPrice.textContent = result[0] + ' ₽';
+      switch (parseInt(result[1])) {
+        case 1:
+          finilyNum.textContent = result[1] + ' товар';
+          break;
+        case 2:
+        case 3:
+        case 4:
+          finilyNum.textContent = result[1] + ' товара';
+          break;
+        default:
+          finilyNum.textContent = result[1] + ' товаров';
+      }
+    }
+  } 
+</script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

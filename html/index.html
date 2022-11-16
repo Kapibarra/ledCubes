@@ -1,0 +1,42 @@
+@include('./components/_head.html', {
+'title' : 'ARTEDILUCE — Светящиеся кубы | Главная страница'
+})
+
+@include('./components/_header.html')
+
+@include('./home-page/_cart.html')
+
+@include('./components/_modal.html')
+
+<div class="blackout"></div>
+
+<main class="main">
+    @include('./home-page/_use.html')
+
+    @include('./home-page/_colors.html')
+
+    @include('./home-page/_advantages.html')
+
+    @include('./home-page/_gallery.html')
+
+    @include('./components/_form.html', {
+        'id' : 'id="form"'
+    })
+
+    @include('./home-page/_check.html')
+
+    @include('./home-page/_types.html')
+
+    @include('./home-page/_product.html')
+
+    @include('./home-page/_about.html')
+
+    @include('./components/_form.html', {
+        'id' : ''
+    })
+    
+    @include('./home-page/_contacts.html')
+</main>
+
+@include('./components/_footer.html')
+@include('./components/_bottom.html')
