@@ -2967,11 +2967,12 @@ body {
     display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start
+    align-items: flex-start;
+    gap:5px;
 }
 
 .header__top {
-    padding: 15px 10px 0 10px;
+    padding: 0px 10px 5px 10px;
     background-color: rgba(0, 0, 0, 0);
 /*    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(7, 7, 24, 0.6)), to(rgba(7, 7, 24, 0)));
     background-image: -o-linear-gradient(top, rgba(7, 7, 24, 0.6) 0%, rgba(7, 7, 24, 0) 100%);
@@ -3140,17 +3141,33 @@ body {
 
 .header__logo,
 .header__items {
-    margin-right: 15px
+
 }
 
 .header__items {
     position: relative;
     top: -10px;
 }
-
+.header__order-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.1;
+    background-color: #f6bf0c;
+    border-radius: 15px;
+    padding: 15px 25px;
+}
 @media only screen and (max-width: 1309px) {
     .header__logo {
-        margin-right: 50px
+        margin-right: 10px
     }
 }
 @media only screen and (max-width: 1097px) {
@@ -4438,13 +4455,13 @@ body {
 }
 
 .use__title {
-    margin-bottom: 30px
+    margin-bottom: 10px
 }
 
 .use__subtext {
     width: 100%;
     max-width: 770px;
-    margin-bottom: 100px
+    margin-bottom: 30px
 }
 
 @media only screen and (max-width: 767px) {
@@ -7220,7 +7237,7 @@ body {
   width: 100%;
   border-radius: 15px;
   max-width: 300px;
-  height: 350px;
+  height: 300px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -7275,11 +7292,11 @@ body {
     margin-right: -40px;
   }
   .app-scope-slider__swiper.swiper .swiper-slide-active img {
-    height: 590px;
+    height: 490px;
   }
   .app-scope-slider__swiper.swiper .swiper-slide-active p {
     width: 300px;
-    top: 405px;
+    top: 350px;
     font-size: 14px;
   }
   .app-scope-slider__navigation {
