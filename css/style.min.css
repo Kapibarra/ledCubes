@@ -48,7 +48,8 @@
 
 html {
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -4133,7 +4134,6 @@ body {
 
 .advantage-card {
     height: 100%;
-    min-height: 302px;
     padding: 132px 30px 23px 30px;
     background-color: #161616;
     background-repeat: no-repeat;
@@ -4206,7 +4206,7 @@ body {
 }
 
 .colors-card__content {
-    min-height: 173px;
+    min-height: 120px;
     padding: 30px 28px 28px
 }
 
@@ -4390,18 +4390,27 @@ body {
 .about__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
 }
 
 @media only screen and (max-width: 1309px) {
     .about__wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
-
+@media only screen and (max-width: 967px) {
+    .about__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
 .about__image {
     background-position: center;
     background-repeat: no-repeat;
@@ -4417,7 +4426,7 @@ body {
 @media only screen and (max-width: 1309px) {
     .about__image {
         max-width: 100%;
-        height: 442px;
+        height: 342px;
         margin-right: 0;
         margin-bottom: 30px
     }
@@ -4981,7 +4990,7 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 60px
+    margin-bottom: 30px
 }
 
 .gallery__title {
@@ -5039,7 +5048,7 @@ body {
 }
 
 .gallery__img {
-    height: 600px;
+    height: 450px;
     -o-object-fit: cover;
     object-fit: cover;
     border-radius: 15px
@@ -5047,7 +5056,7 @@ body {
 
 @media only screen and (max-width: 1366px) {
     .gallery__img {
-        height: 457px
+        height: 380px
     }
 }
 
@@ -5839,8 +5848,6 @@ body {
     .product__wrapper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column
     }
 }
 
@@ -5852,8 +5859,8 @@ body {
 
 @media only screen and (max-width: 1309px) {
     .product__pictures {
-        max-width: 100%;
-        margin-right: 0;
+        max-width: 50%;
+        margin-right: 30px;
         margin-bottom: 30px
     }
 }
